@@ -84,3 +84,69 @@ A deep learning model that finds the roots of Turkish words using Transformer ar
 - **Special Tokens**: <PAD>, <UNK>, <, >
 - **Vocabulary Size**: 35
 
+### 🔄 Callbacks
+- **ModelCheckpoint**: Save best weights
+- **EarlyStopping**: Prevent overfitting
+- **ReduceLROnPlateau**: Automatically adjust learning rate
+
+## �� Dataset
+
+The model is trained on 9,154 Turkish word pairs:
+- **Total Words**: 9,154
+- **Average Word Length**: 8.19 characters
+- **Average Root Length**: 4.71 characters
+- **Words without Suffix**: 19.03%
+
+### 📝 Data Examples
+| Word | Root | Suffix |
+|------|------|--------|
+| alıyorum | al | ıyorum |
+| görmek | gör | mek |
+| şiddetli | şiddet | li |
+| yumurtalar | yumurta | lar |
+
+
+## 🧪 Test Results
+
+### ✅ Sample Predictions
+| Word | True Root | Predicted | Correct |
+|------|-----------|-----------|---------|
+| evimdeyken | ev | ev | ✅ |
+| kitapta | kitap | kitap | ✅ |
+| görüyordum | gör | gör | ✅ |
+| koşacaklarmış | koş | koş | ✅ |
+| bulutlardayım | bulut | bulut | ✅ |
+| tevekkül | tevekkül | tevekkül | ✅ |
+| cömert | cömert | cömert | ✅ |
+| etkilendim | etkilen | etkilen | ✅ |
+| önderimiz | önder | önder | ✅ |
+| anlamlandıramadıklarımdan | anlam | anlam | ✅ |
+
+## 📊 Performance Analysis
+
+### 📈 Loss and Accuracy Charts
+During model training:
+- **Training Loss**: 0.6894 (final)
+- **Validation Loss**: 0.7428 (final)
+- **Training Accuracy**: 43.95% (final)
+- **Validation Accuracy**: 43.32% (final)
+
+### 📉 Learning Rate Schedule
+- Start: 5e-4
+- Epoch 21: 2.5e-4 (ReduceLROnPlateau)
+- Epoch 29: 1.25e-4
+- Epoch 32: 6.25e-5
+
+## 🎨 Visualizations
+
+The project includes the following visualizations:
+- 📏 **Length Distributions**: Word/root/suffix length histograms
+- 🔝 **Frequency Analysis**: Top roots and suffixes bar charts
+- 📊 **Suffix Buckets**: Pie chart of suffix length distribution
+- �� **Training Metrics**: Loss/accuracy graphs during training
+- �� **Learning Rate**: Learning rate change graph
+
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
