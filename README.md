@@ -147,6 +147,14 @@ The project includes the following visualizations:
 - 📈**Learning Rate**: Learning rate change graph
 
 
-## 📄 License
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+## 🔍 Code And Kaggle Link
+Project: [Transformer-Based Turkish Words Root Finder](https://github.com/omerfarukyuce/Transformer-Based-Turkish-Word-Root-Finder)
+
+Kaggle: [🔤🧠Transformer-Based Turkish Words' Root Finder🪵](https://www.kaggle.com/code/merfarukyce/transformer-based-turkish-words-root-finder)
+
+## 📊 Datasets
+GitHub Dataset: [GitHubDataset](https://github.com/omerfarukyuce/Transformer-Based-Turkish-Word-Root-Finder/blob/main/dataset/turkish-words-roots-suffixes.csv)
+Kaggle Dataset: [KaggleDataset](https://github.com/omerfarukyuce/Transformer-Based-Turkish-Word-Root-Finder)
