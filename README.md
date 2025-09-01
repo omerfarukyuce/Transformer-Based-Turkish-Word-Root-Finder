@@ -28,7 +28,7 @@ A deep learning model that finds the roots of Turkish words using Transformer ar
 - **NumPy**: Numerical computing
 - **Scikit-learn**: Machine learning utilities (train_test_split)
 
-### �� **Visualization**
+### 🖼️ **Visualization**
 - **Matplotlib**: Plotting and visualization
 - **Seaborn**: Statistical data visualization
 - **Custom Plot Themes**: Professional styling with whitegrid theme
@@ -89,7 +89,7 @@ A deep learning model that finds the roots of Turkish words using Transformer ar
 - **EarlyStopping**: Prevent overfitting
 - **ReduceLROnPlateau**: Automatically adjust learning rate
 
-## �� Dataset
+##  📊 Dataset
 
 The model is trained on 9,154 Turkish word pairs:
 - **Total Words**: 9,154
@@ -143,8 +143,8 @@ The project includes the following visualizations:
 - 📏 **Length Distributions**: Word/root/suffix length histograms
 - 🔝 **Frequency Analysis**: Top roots and suffixes bar charts
 - 📊 **Suffix Buckets**: Pie chart of suffix length distribution
-- �� **Training Metrics**: Loss/accuracy graphs during training
-- �� **Learning Rate**: Learning rate change graph
+- 📶**Training Metrics**: Loss/accuracy graphs during training
+- 📈**Learning Rate**: Learning rate change graph
 
 
 ## 📄 License
