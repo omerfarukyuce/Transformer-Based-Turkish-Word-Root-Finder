@@ -41,4 +41,109 @@ A deep learning model that finds the roots of Turkish words using Transformer ar
 - **Max Encoder Length**: 34
 - **Max Decoder Length**: 13
 
-## 📁 Project Structure
+
+## �� Dataset
+
+The model is trained on 9,154 Turkish word pairs:
+- **Total Words**: 9,154
+- **Average Word Length**: 8.19 characters
+- **Average Root Length**: 4.71 characters
+- **Words without Suffix**: 19.03%
+
+### 📝 Data Examples
+| Word | Root | Suffix |
+|------|------|--------|
+| alıyorum | al | ıyorum |
+| görmek | gör | mek |
+| şiddetli | şiddet | li |
+| yumurtalar | yumurta | lar |
+
+### ⚡ Greedy Decoding
+```python
+# For fast prediction
+root = finder.predict_root_greedy("kitapta")
+print(root)  # kitap
+```
+
+### 🎯 Beam Search Decoding
+```python
+# For more accurate prediction
+root = finder.predict_root_beam_search("görüyordum", beam_size=3)
+print(root)  # gör
+```
+
+### 📦 Batch Prediction
+```python
+words = ["evimdeyken", "kitapta", "görüyordum", "koşacaklarmış"]
+results = finder.predict_batch(words)
+for word, root in results:
+    print(f"{word} → {root}")
+```
+
+
+### 🔄 Callbacks
+- **ModelCheckpoint**: Save best weights
+- **EarlyStopping**: Prevent overfitting
+- **ReduceLROnPlateau**: Automatically adjust learning rate
+
+## 🧪 Test Results
+
+### �� Sample Predictions
+| Word | True Root | Predicted | Correct |
+|------|-----------|-----------|---------|
+| evimdeyken | ev | ev | ✅ |
+| kitapta | kitap | kitap | ✅ |
+| görüyordum | gör | gör | ✅ |
+| koşacaklarmış | koş | koş | ✅ |
+| bulutlardayım | bulut | bulut | ✅ |
+| tevekkül | tevekkül | tevekkül | ✅ |
+| cömert | cömert | cömert | ✅ |
+| etkilendim | etkilen | etkilen | ✅ |
+| önderimiz | önder | önder | ✅ |
+| anlamlandıramadıklarımdan | anlam | anlam | ✅ |
+
+## 📊 Performance Analysis
+
+### 📈 Loss and Accuracy Charts
+During model training:
+- **Training Loss**: 0.6894 (final)
+- **Validation Loss**: 0.7428 (final)
+- **Training Accuracy**: 43.95% (final)
+- **Validation Accuracy**: 43.32% (final)
+
+### 📉 Learning Rate Schedule
+- Start: 5e-4
+- Epoch 21: 2.5e-4 (ReduceLROnPlateau)
+- Epoch 29: 1.25e-4
+- Epoch 32: 6.25e-5
+
+## 🎨 Visualizations
+
+The project includes the following visualizations:
+- 📏 Word/root/suffix length distributions
+- 🔝 Most frequent roots and suffixes
+- 📊 Suffix length buckets
+- 📈 Loss/accuracy graphs during training
+- 📉 Learning rate change graph
+
+## 🔧 Advanced Features
+
+### 🎨 Label Smoothing
+```python
+def sparse_smoothed_cce(y_true, y_pred):
+    # Ignore padding tokens
+    # Prevent overfitting with label smoothing
+    # Calculate sparse categorical cross-entropy
+```
+
+### �� Attention Masking
+- **Encoder Mask**: Ignore padding tokens
+- **Decoder Mask**: Causal + padding mask combination
+
+### 📍 Positional Encoding
+- Separate positional embeddings for encoder and decoder
+- Sinusoidal position encoding
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
