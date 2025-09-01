@@ -70,7 +70,7 @@ A deep learning model that finds the roots of Turkish words using Transformer ar
 - **Feed Forward Dimension**: 512
 - **Dropout Rate**: 0.1
 
-### ��️ Hyperparameters
+### ⚡🛠️ Hyperparameters
 - **Batch Size**: 64
 - **Learning Rate**: 5e-4 (with ReduceLROnPlateau)
 - **Label Smoothing**: 0.1
@@ -78,10 +78,9 @@ A deep learning model that finds the roots of Turkish words using Transformer ar
 - **Max Encoder Length**: 34
 - **Max Decoder Length**: 13
 
-### �� Vocabulary Details
+### 📖 Vocabulary Details
 - **Total Characters**: 35 (including special tokens)
 - **Turkish Characters**: ç, ğ, ı, ö, ş, ü
 - **Special Tokens**: <PAD>, <UNK>, <, >
 - **Vocabulary Size**: 35
 
-## 📁 Project Structure
