@@ -130,10 +130,14 @@ for w in words:
 - Special tokens are used for padding (`<PAD>`), unknown characters (`<UNK>`), and sequence boundaries (`<` and `>`)
 - The implementation includes label smoothing to improve generalization
 
-## 🤝 Contributing
+## 📜 License
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+This project is licensed under the [MIT](LICENSE) License.
 
-## 📄 License
+## 🔍 Code And Kaggle Link
+Project: [transformer-based-turkish-words-root-finder.ipynb](https://github.com/omerfarukyuce/Transformer-Based-Turkish-Word-Root-Finder/blob/main/transformer-based-turkish-words-root-finder.ipynb)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Kaggle: [🔤🧠Transformer-Based Turkish Words' Root Finder🪵](https://www.kaggle.com/code/merfarukyce/transformer-based-turkish-words-root-finder)
+
+## 📊 Datasets
+Dataset: [Turkish words-roots-suffixes](https://www.kaggle.com/datasets/merfarukyce/turkish-words)
