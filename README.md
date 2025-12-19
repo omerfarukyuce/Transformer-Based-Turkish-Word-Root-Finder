@@ -44,24 +44,6 @@ Turkish alphabet characters used in the dataset:
 | şiddetli     | şiddet   | li      |
 | yumurtalar   | yumurta  | lar     |
 
-## 🛠️ Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone [your-repository-url]
-   cd [repository-name]
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-   Or install the required packages manually:
-   ```bash
-   pip install tensorflow numpy pandas matplotlib seaborn scikit-learn
-   ```
-
 ## 🏋️‍♂️ Training the Model
 
 1. **Prepare your dataset**
