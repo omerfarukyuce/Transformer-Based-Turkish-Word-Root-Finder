@@ -134,7 +134,7 @@ pip install tensorflow pandas numpy matplotlib seaborn scikit-learn
 
 ```bash
 # Clone the repo
-git clone [https://github.com/<your-username>/turkish-root-finder.git](https://github.com/omerfarukyuce/Transformer-Based-Turkish-Word-Root-Finder.git)
+git clone https://github.com/omerfarukyuce/Transformer-Based-Turkish-Word-Root-Finder.git
 cd turkish-root-finder
 
 # Create a virtual environment (optional)
@@ -277,7 +277,4 @@ Kaggle: [🔤🧠Transformer-Based Turkish Words' Root Finder🪵](https://www.k
 Dataset: [Turkish words-roots-suffixes](https://www.kaggle.com/datasets/merfarukyce/turkish-words)
 
 </div>
-
-
-
 
